@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int Angle1=sc.nextInt();
+        int Angle2=sc.nextInt();
+        int Angle3=sc.nextInt();
+        int Sum=Angle1+Angle2+Angle3;
+        System.out.println((Sum==180)?"Triangle is valid":"Triangle is not valid");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
