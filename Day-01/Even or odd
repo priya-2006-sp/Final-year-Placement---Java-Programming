@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a<=100)
+        {
+            if(a%2!=0){
+                System.out.printf("The Given Number %03d is Odd.\n",a);
+            }
+            else{
+                System.out.printf("The Given Number %03d is Even.",a);
+            }
+        }
+        else{
+            System.out.print("Invalid Input");
+        }
+    }
+}
