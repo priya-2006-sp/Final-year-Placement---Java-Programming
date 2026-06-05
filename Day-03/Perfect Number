@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n1=sc.nextInt();
+        int sum=0;
+        if(n1<=0){
+            System.out.println("Invalid Input");
+        }
+        else{
+            for(int i=1;i<=n1;i++){
+                if(n1%i==0 && i!=n1){
+                    sum+=i;
+                }
+            }
+            if(sum==n1){
+                System.out.printf("The Number %.1f is a Perfect Number.",(float)n1);
+        }
+            else{
+                System.out.printf("The Number %.1f is a Not Perfect Number.",(float)n1);
+        }
+        
+        }
+    }
+}
