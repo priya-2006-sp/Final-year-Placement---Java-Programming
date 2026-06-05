@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+            if(n1<n2){
+             if(n1>1 && n1<10 && n2>1 && n2<=10 ){
+                    for(int i=n1;i<=n2;i++){
+                        System.out.printf("%02d ",i);
+                    }
+                }
+            
+            else if(n1>0 && n1<999 && n2>1 && n2<=999 ){
+                    for(int i=n1;i<=n2;i++){
+                        System.out.printf("%03d ",i);
+                    }
+                }
+            }
+}
+}
