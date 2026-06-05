@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int p=sc.nextInt();
+        int r=sc.nextInt();
+        int n=sc.nextInt();
+        double interest=(p*n*r)/100;
+        System.out.printf("%.2f\n",(float)interest);
+        double amount=p+interest;
+        System.out.printf("%.2f\n",(float)amount);
+        double dis=(interest*2)/100;
+        System.out.printf("%.2f\n",(float)dis);
+        double total_amount=amount-dis;
+        System.out.printf("%.2f",(float)total_amount);
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
