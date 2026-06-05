@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        int sum1=0;
+        int sum2=0;
+        if((n1>0 && n1<100)&&(n2>0 && n2<100)){
+            for(int i=n1;i<=n2;i++){
+                if(i%2==0){
+                    sum1+=i;
+                }
+                else{
+                    sum2+=i;
+                }
+            }
+            System.out.printf("The Even Sum value is %.2f\n",(float)sum1);
+            System.out.printf("The Odd Sum value is %.2f",(float)sum2);
+        }
+        else{
+            System.out.print("Invalid Input");
+            }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
