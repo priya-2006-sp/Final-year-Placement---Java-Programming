@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double l=sc.nextInt();
+        double d=sc.nextInt();
+        if(l<=0 || d<=0){
+            System.out.println("Invalid Input");
+        }
+        else{
+        double km=(l/d)*100;
+        double to_miles=d*0.6214;
+        double to_gallons=l*0.2642;
+        double mg=to_miles/to_gallons;
+        System.out.printf("Liters/100KM \n%.2f\n",(float)km);
+        System.out.printf("Miles/gallons \n%.2f",(float)mg);
+        }
+    }
+}
