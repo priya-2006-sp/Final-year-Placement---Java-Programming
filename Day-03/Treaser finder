@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int f_b=sc.nextInt();
+        int s_b=sc.nextInt();
+        int t_b=sc.nextInt();
+        int lar=Math.max(f_b,Math.max(s_b,t_b));
+        int sma=Math.min(f_b,Math.max(s_b,t_b));
+        int second_lar=(f_b+s_b+t_b)-lar-sma;
+        System.out.println("The treasure is in the box which has number " +second_lar+".");
+        while(sma>0){
+            if(f_b%sma==0 && s_b%sma==0 && t_b%sma==0){
+                break;
+            }
+            sma--;
+        }
+        System.out.println("The code to open the box is "+sma+".");
+    }
+    
+}
