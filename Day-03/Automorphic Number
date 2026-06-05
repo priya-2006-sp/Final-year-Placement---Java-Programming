@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n1=sc.nextInt();
+        int sqr=0,rem=0;
+        //sqr= n1*n1;
+        if(n1>1 && n1<=9){
+        sqr=(int)Math.pow(n1, 2);
+        rem=sqr%10;
+            if(n1==rem){
+                System.out.printf("The Number %.1f is Automorphic Number",(float)n1);
+        }
+            else{
+                System.out.printf("The Number %.1f is Not Automorphic Number",(float)n1);
+        }
+        }
+        else{
+            System.out.print("Invalid Input");
+        }
+        }
+        //System.out.print(sqr);
+        
+}
