@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int CSE=sc.nextInt();
+        int ECE=sc.nextInt();
+        int mech=sc.nextInt();
+        if(CSE <0 || ECE <0 || mech<0){
+            System.out.println("Input is Invalid");
+        }
+            else if(CSE==ECE && ECE==mech ){
+                    System.out.println("None of the department has got the highest placement");
+        }
+            else{
+                if(CSE > ECE && CSE > mech){
+            System.out.println("Highest Placement: \nCSE");
+            }
+                else{
+                if(ECE > CSE && ECE > mech){
+                    System.out.println("Highest Placement: \nECE");
+                }
+                else{
+                    System.out.println("Highest Placement: \nCSE\nMECH");
+                }
+                }
+        }
+        
+        }
+        
+}
